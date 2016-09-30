@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:rowCount="2"
+    android:columnCount="1"
+    android:orientation="vertical">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.caxidy.calculadora.MainActivity"
+        android:weightSum="1"
+        android:collapseColumns="4"
+        android:nestedScrollingEnabled="false"
+        android:stretchColumns="*"
+        android:shrinkColumns="0,1,2,3"
+        android:background="?attr/colorControlHighlight">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_pantalla"
+                android:inputType="number|text"
+                android:ems="10"
+                android:id="@+id/pantalla"
+                android:layout_span="4"
+                android:background="?attr/colorControlHighlight" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:measureWithLargestChild="false">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b7"
+                android:id="@+id/button7"
+                android:background="@color/colorBotonAzul"
+                android:onClick="pulsaNumero" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b8"
+                android:id="@+id/button8"
+                android:onClick="pulsaNumero"
+                android:background="@color/colorBotonAzul" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b9"
+                android:id="@+id/button9"
+                android:onClick="pulsaNumero"
+                android:background="@color/colorBotonAzul" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bc"
+                android:id="@+id/buttonc"
+                android:onClick="pulsaC"
+                android:background="@color/colorBotonGris" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b4"
+                android:id="@+id/button4"
+                android:onClick="pulsaNumero"
+                android:background="@color/colorBotonAzul" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b5"
+                android:id="@+id/button5"
+                android:onClick="pulsaNumero"
+                android:background="@color/colorBotonAzul" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button6"
+                android:textStyle="normal"
+                android:text="@string/b6"
+                android:onClick="pulsaNumero"
+                android:background="@color/colorBotonAzul" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bp"
+                android:id="@+id/buttonpunto"
+                android:onClick="pulsaComa"
+                android:background="@color/colorBotonAzul" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/b1"
+                android:id="@+id/button1"
+                android:onClick="pulsaNumero"
+                android:background="@color/colorBotonAzul" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b2"
+                android:id="@+id/button2"
+                android:onClick="pulsaNumero"
+                android:background="@color/colorBotonAzul" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b3"
+                android:id="@+id/button3"
+                android:onClick="pulsaNumero"
+                android:background="@color/colorBotonAzul" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/b0"
+                android:id="@+id/button0"
+                android:onClick="pulsaNumero"
+                android:background="@color/colorBotonAzul" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bsuma"
+                android:id="@+id/buttonsuma"
+                android:onClick="pulsaOperador"
+                android:background="@color/colorBotonNegro"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bresta"
+                android:id="@+id/buttonresta"
+                android:onClick="pulsaOperador"
+                android:background="@color/colorBotonNegro"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bmult"
+                android:id="@+id/buttonmulti"
+                android:onClick="pulsaOperador"
+                android:background="@color/colorBotonNegro"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bdiv"
+                android:id="@+id/buttondiv"
+                android:onClick="pulsaOperador"
+                android:background="@color/colorBotonNegro"
+                android:textColor="@android:color/background_light" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bres"
+                android:id="@+id/buttonresul"
+                android:layout_span="4"
+                android:onClick="pulsaIgual"
+                android:background="@color/colorBotonGris" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/activity_nota"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/vacio"
+                android:id="@+id/notas"
+                android:layout_span="4"
+                android:background="@color/colorBotonAzul"
+                android:textColor="@android:color/black" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bGuardar"
+            android:layout_width="@dimen/activity_anchoMem"
+            android:layout_height="@dimen/activity_altoMem"
+            android:background="@color/colorBotonNegro"
+            android:textColor="@android:color/background_light"
+            android:text="@string/guardar"
+            android:onClick="pulsaMemoria" />
+
+        <Button
+            android:id="@+id/bRecuperar"
+            android:layout_width="@dimen/activity_anchoMem"
+            android:layout_height="@dimen/activity_altoMem"
+            android:background="@color/colorBotonNegro"
+            android:textColor="@android:color/background_light"
+            android:text="@string/recuperar"
+            android:onClick="pulsaRecuperar" />
+    </LinearLayout>
+
+</GridLayout>
