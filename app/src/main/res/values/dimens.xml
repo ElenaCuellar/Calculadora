@@ -3,7 +3,9 @@
     <dimen name="activity_horizontal_margin">5dp</dimen>
     <dimen name="activity_vertical_margin">5dp</dimen>
     <dimen name="activity_pantalla">90dp</dimen>
+    <dimen name="activity_pantalla_h">60dp</dimen>
     <dimen name="activity_nota">60dp</dimen>
     <dimen name="activity_anchoMem">190dp</dimen>
     <dimen name="activity_altoMem">120dp</dimen>
+    <dimen name="activity_nota_h">40dp</dimen>
 </resources>

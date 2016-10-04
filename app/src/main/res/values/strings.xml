@@ -25,5 +25,8 @@
     <string name="errorGuardar">Se ha guardado 0 en memoria</string>
     <string name="errorRecup">No hay nada en memoria</string>
     <string name="errorComa">Ya hay coma decimal</string>
+    <string name="bsin">sin</string>
+    <string name="bcos">cos</string>
+    <string name="braiz">raiz</string>
 
 </resources>
